@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FrameWorkBase</string>
+
+    <string name="common_loading_message">正在加載中...</string>
+    <string name="common_empty_msg">抱歉,暫未獲取到數據!\n請點擊屏幕重試~</string>
+    <string name="common_error_msg">抱歉,系統出錯了!\n請點擊屏幕重試~</string>
+    <string name="common_no_network_msg">暫未連接上網絡!\n請連接後點擊屏幕重試~</string>
+    <string name="ok">確定</string>
+    <string name="cancel">取消</string>
+    <string name="text_no_network">網絡不可用</string>
+    <string name="text_net_error">請求失敗，請稍後再試...</string>
+</resources>

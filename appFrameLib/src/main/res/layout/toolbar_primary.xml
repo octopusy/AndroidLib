@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/toolbarLayout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        android:fitsSystemWindows="true"
+        android:navigationIcon="@mipmap/nav_back_button_write"
+        app:popupTheme="@style/toolbarPop"
+        app:theme="@style/toolbarPrimary"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/Text.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="10"
+            android:textColor="@color/white"
+            tools:text="测试标题"/>
+
+        <TextView
+            android:id="@+id/tv_right"
+            style="@style/Text.Toolbar.Action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:paddingEnd="@dimen/defaultPadding"
+            android:paddingLeft="@dimen/defaultPadding"
+            android:paddingRight="@dimen/defaultPadding"
+            android:paddingStart="@dimen/defaultPadding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeSubtitle"
+            tools:text="测试"/>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/dividingLine"
+        android:visibility="gone"/>
+</LinearLayout>

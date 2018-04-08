@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--主色调颜色-->
+    <color name="colorPrimary">#ED554D</color>
+    <!--深色调颜色-->
+    <color name="colorPrimaryDark">#ED554D</color>
+    <color name="colorPrimaryPoint">#86E3BC</color>
+    <color name="colorAccent">#15B571</color>
+
+    <!--页面背景颜色-->
+    <color name="pageBg">#EFEFEF</color>
+
+    <!--分割线颜色-->
+    <color name="dividingLine">#DCDCDC</color>
+
+    <color name="itemClickBg">#F7F7F7</color>
+
+    <!--标题字体颜色-->
+    <color name="textColorTitle">#333333</color>
+
+    <!--副标题字体颜色-->
+    <color name="textColorSubtitle">#595959</color>
+
+    <!--输入框提示字体颜色-->
+    <color name="textColorHint">#A8A8A8</color>
+
+    <color name="editTextBg">#F5F5F5</color>
+
+    <!--重要信息字体颜色-->
+    <color name="textColorImportant">#FF7838</color>
+    <!--错误字体颜色-->
+    <color name="textColorError">#FF402D</color>
+
+    <color name="textColorPrimary">@color/colorPrimaryDark</color>
+
+    <color name="btnTextColorPrimary">#FFFFFF</color>
+    <color name="btnTextColorPrimaryUnable">#7FFFFFFF</color>
+
+    <color name="grayBg">#F5F5F5</color>
+    <color name="half_transparents">#30000000</color>
+</resources>

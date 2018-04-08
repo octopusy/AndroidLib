@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile "com.android.support:multidex:$rootProject.ext.multidexVersion"
+    compile "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.rxjava2"
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.ext.gson"
+    compile "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.loggingInterceptor"
+    compile "com.squareup.okhttp3:okhttp:$rootProject.ext.okhttp"
+
+    compile "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+    compile "com.android.support:appcompat-v7:$rootProject.ext.supportLibraryVersion"
+
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.ext.rxandroidVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjavaVersion"
+    compile "com.trello.rxlifecycle2:rxlifecycle:$rootProject.ext.rxLifecycleVersion"
+    compile "com.trello.rxlifecycle2:rxlifecycle-components:$rootProject.ext.rxLifecycleVersion"
+    compile "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
+    compile "com.orhanobut:logger:$rootProject.ext.loggerVersion"
+
+}
