@@ -20,7 +20,7 @@ class LoginActivity : AppBaseActivity() {
     }
 
     override fun initViewsAndEvents() {
-        btn_customView.setOnClickListener { view ->
+        btn_customView.setOnClickListener { _ ->
             openActivity(WaterViewActivity::class.java)
         }
     }
@@ -28,6 +28,5 @@ class LoginActivity : AppBaseActivity() {
     override fun getLoadingTargetView(): View {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
-
 
 }

@@ -31,7 +31,7 @@ class WaterViewActivity: AppBaseActivity() {
 
         waterView.setWaters(waterList)
 
-        btn_reset.setOnClickListener { view ->
+        btn_reset.setOnClickListener { _ ->
             waterView.setWaters(waterList)
         }
     }
