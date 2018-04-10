@@ -1,6 +1,8 @@
 package com.android.octopusy;
 
 import android.content.Context;
+import android.support.multidex.MultiDex;
+
 import com.axl.android.frameworkbase.BaseApplication;
 
 /**
@@ -16,7 +18,7 @@ public class App extends BaseApplication{
     public void onCreate() {
         super.onCreate();
         mContext = this;
-
+        MultiDex.install(mContext);
 
     }
 }

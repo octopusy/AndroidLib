@@ -14,6 +14,7 @@ import com.google.gson.Gson
  * Time: 15:22
  */
 open abstract class AppBaseFragment : BaseFragment() {
+
     protected val sp: PreferencesUtil by lazy {
         PreferencesUtil(context)
     }
