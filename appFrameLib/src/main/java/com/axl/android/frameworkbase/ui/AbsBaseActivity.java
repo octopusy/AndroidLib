@@ -32,8 +32,8 @@ import io.reactivex.Observable;
  * Date: 2017/10/13
  * Time: 17:10
  */
-
 public abstract class AbsBaseActivity extends RxAppCompatActivity {
+
     private static final String TAG = AbsBaseActivity.class.getSimpleName();
 
     protected View mContentView;
@@ -42,6 +42,7 @@ public abstract class AbsBaseActivity extends RxAppCompatActivity {
      * Log tag
      */
     protected static String TAG_LOG = null;
+
     /**
      * 屏幕参数
      */
@@ -211,7 +212,6 @@ public abstract class AbsBaseActivity extends RxAppCompatActivity {
      */
     protected abstract void initViewsAndEvents();
 
-
     /**
      * get loading target view
      */
@@ -224,15 +224,12 @@ public abstract class AbsBaseActivity extends RxAppCompatActivity {
 
     }
 
-    ;
-
     /**
      * network disconnected
      */
     protected void onNetworkDisConnected() {
 
     }
-
 
     /**
      * toggle overridePendingTransition
@@ -243,15 +240,12 @@ public abstract class AbsBaseActivity extends RxAppCompatActivity {
         return false;
     }
 
-    ;
-
     /**
      * get the overridePendingTransition mode
      */
     protected TransitionMode getOverridePendingTransitionMode() {
         return TransitionMode.FADE;
     }
-
 
     /********************************
      * 【跳转到其他界面】
@@ -280,7 +274,6 @@ public abstract class AbsBaseActivity extends RxAppCompatActivity {
         }
     }
 
-
     public void openActivity(String pAction) {
         openActivity(pAction, null);
     }
@@ -292,7 +285,6 @@ public abstract class AbsBaseActivity extends RxAppCompatActivity {
         }
         startActivity(intent);
     }
-
 
     /**
      * show toast
@@ -345,7 +337,6 @@ public abstract class AbsBaseActivity extends RxAppCompatActivity {
         }
     }
 
-
     /***
      * snackbar 增加右侧提示
      */
@@ -377,7 +368,6 @@ public abstract class AbsBaseActivity extends RxAppCompatActivity {
             e.printStackTrace();
         }
     }
-
 
     /**
      * toggle show loading

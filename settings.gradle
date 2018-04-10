@@ -1,1 +1,1 @@
-include ':app',':appFrameLib'
+include ':app',':appFrameLib', ':uilib', ':commonlib'
