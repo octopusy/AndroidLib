@@ -1,4 +1,4 @@
-package com.android.octopusy.activity
+package com.android.octopusy.view.activity
 
 import android.os.Bundle
 import android.view.View
