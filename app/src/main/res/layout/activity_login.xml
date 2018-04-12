@@ -15,10 +15,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btn_customView"
-            style="@style/LoginBtnTheme"
-            android:text="@string/btn_custom_view"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_customView"
+                style="@style/LoginBtnTheme"
+                android:text="@string/btn_custom_view"/>
+
+            <Button
+                android:id="@+id/btn_coordLayout"
+                style="@style/LoginBtnTheme"
+                android:text="@string/btn_coord_layout"/>
+
+        </LinearLayout>
 
     </ScrollView>
 </LinearLayout>

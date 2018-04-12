@@ -39,6 +39,7 @@ ext {
 
     // App dependencies
     supportLibraryVersion = '27.0.2'
+    volley = "1.0.0"
     multidexVersion = "1.0.2"
 
     retrofit = "2.3.0"

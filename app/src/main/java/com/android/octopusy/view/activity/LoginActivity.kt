@@ -20,8 +20,13 @@ class LoginActivity : AppBaseActivity() {
     }
 
     override fun initViewsAndEvents() {
+
         btn_customView.setOnClickListener { _ ->
             openActivity(WaterViewActivity::class.java)
+        }
+
+        btn_coordLayout.setOnClickListener{ _ ->
+            openActivity(CoordLayoutActivity::class.java)
         }
     }
 
