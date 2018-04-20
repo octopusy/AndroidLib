@@ -24,7 +24,5 @@ public class App extends BaseApplication{
         x.Ext.init(this);
         //是否是开发、调试模式
         x.Ext.setDebug(BuildConfig.DEBUG);//是否输出debug日志，开启debug会影响性能
-
-        
     }
 }

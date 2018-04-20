@@ -20,7 +20,6 @@ class LoginActivity : AppBaseActivity() {
     }
 
     override fun initViewsAndEvents() {
-
         btn_customView.setOnClickListener { _ ->
             openActivity(WaterViewActivity::class.java)
         }
