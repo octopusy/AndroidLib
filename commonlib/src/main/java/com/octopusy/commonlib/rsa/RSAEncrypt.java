@@ -23,9 +23,6 @@ import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 
-import test.Base64;
-
-
 public class RSAEncrypt {
 	/**
 	 * 字节数据转字符串专用集合
